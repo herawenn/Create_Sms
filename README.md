@@ -1,19 +1,29 @@
-<!-- PROJECT SHIELDS -->
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
-# About The Project
+# SMS Generator
 
 ![running the tool](https://i.imgur.com/l1rUSH4.jpg)
 
-SMS generator. Unlimited numbers, any region, and verified
+This is a simple Python tool to generate and validate random phone numbers for various countries.
+It utilizes the phonenumbers library to validate the generated phone numbers.
 
-### Installation
+## Features
+
+- Supports 191 countries with predefined phone number formats.
+- Generates random phone numbers based on the selected country's format.
+- Validates the generated phone numbers using the phonenumbers library.
+- Saves both valid and invalid phone numbers to separate files.
+
+## Usage
+
+1. Run `sms_gen.py`
+2. Follow the prompts to select a country and specify the number of phone numbers to generate.
+3. Optionally, choose to validate the generated phone numbers.
+4. View the generated phone numbers and validation results in the output files.
+
+## Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/herawenn/SMS-GEN
+   git clone https://github.com/herawenn/sms-gen
    ```
 2. Install requirements
    ```sh
@@ -21,16 +31,8 @@ SMS generator. Unlimited numbers, any region, and verified
    ```
 3. Run the program
    ```sh
-   pip gen.py
+   pip sms-gen.py
    ```
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Choose the country code, and how many numbers you'd like to generate.
-* Saves generated numbers in `results/generated.txt`
-* Saves verified numbers in `results/valid.txt`
-* Saves non verified numbers in `results/invalid.txt`
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -46,11 +48,13 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 <!-- CONTACT -->
 ## Contact
 
-[Telegram](https://t.me/mulicious) 
-[Discord](https://discord.gg/portlordss)
 Project Link: [https://github.com/herawenn/sms-gen](https://github.com/herawenn/sms-gen)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
